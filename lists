@@ -1,0 +1,91 @@
+print("Hello World");
+Bikes = ['Yamaha','Honda','Unique','Super Power'];
+print(Bikes);
+print(Bikes[1]);
+print(Bikes[1].upper());
+print(Bikes);
+
+#ACCESSING THE LIST IN REVERSE ORDER
+print(Bikes[-1]);       print(Bikes[-2]);       print(Bikes[-3]);       print(Bikes[-4]);
+print('I have' + ' ' + Bikes[2] + ' ' + 'and it is my first bike' + '.');
+print(Bikes);
+print('\n');
+
+#REPLACIMG THE ITEM AT TARGET INDEX NUMBER
+Bikes[0] = 'Suzuki';
+print(Bikes);
+
+#INSERTING AN ITEM IN A LIST BY USING APPEND IT INSERTS AT THE LAST
+Bikes.append('Yamaha');
+print(Bikes);
+print('\n');
+
+#INSERTING AN ITEM IN A LIST BY USING INSERT AND PROVIDING THE TARGET INDEX
+Bikes = [];
+print(Bikes);
+Bikes.insert(0,'Yamaha');           print(Bikes);
+Bikes.insert(1,'Honda');            print(Bikes);
+Bikes.insert(2,'Unique');           print(Bikes);
+Bikes.insert(3,'Super Power');      print(Bikes);
+
+#REMOVING AN ITEM BY USING DEL
+del Bikes[0];           print(Bikes);
+del Bikes[1];           print(Bikes);
+
+print('\n');
+Bikes = ['Yamaha','Honda','Unique','Super Power'];
+print(Bikes);
+
+#REMOVING ITEM FROM LIST BY USING POP, IT FOLLOWS LIFO TECHNIQUE IF NO TARGET INDEX IS GIVEN
+Popped_Bike = Bikes.pop();
+print(Bikes);
+print(Popped_Bike);
+print('\n');
+print(Bikes);
+Popped_Bike = Bikes.pop();
+print(Bikes);
+print(Popped_Bike);
+
+#REMOVING A PARTICULAR ITEM BY USING POP
+Bikes = ['Yamaha','Honda','Unique','Super Power'];
+Popped_Bike = Bikes.pop(2);
+print('I have' + ' ' + Popped_Bike + ' ' + 'and it is my first bike' + '.');
+print('\n');
+
+Bikes = ['Yamaha','Honda','Unique','Super Power'];
+
+#REMOVE AN ITEM FROM THE LIST PERMANENTLY
+Bikes.remove('Yamaha');
+print(Bikes);
+
+#REMOVING AN ITEM BUT FIRST SAVING IT IN A VARIABLE SO IT CAN BE USED AGAIN
+Removed_Bike = 'Unique';
+Bikes.remove(Removed_Bike);
+print(Bikes);
+print(Removed_Bike);
+print('I have' + ' ' + Popped_Bike + ' ' + 'and it is my first bike' + '.');
+print('\n');
+
+#PERMANENT SORTING
+Bikes = ['Yamaha','Honda','Unique','Super Power'];
+print(Bikes);
+Bikes.sort();
+print(Bikes);
+
+#TEMPORARY SORTOING
+Bikes = ['Yamaha','Honda','Unique','Super Power'];
+print('\nOrignal list:');
+print(Bikes);
+print('\nSorted List:');
+print(sorted(Bikes));
+print('\nOrignal list again:');
+print(Bikes);
+
+#PRINTING THE LIST IN REVERSE ORDER
+Bikes.reverse();
+print(Bikes);
+
+#LENGTH OF THE LIST
+length = len(Bikes);
+print('\nThe length of the list is:');
+print(length);
